@@ -47,5 +47,5 @@ $lang['formulario']['passwd'] = 'Ingresar contraseña';
 $lang['formulario']['captcha'] = 'Ingresar código de seguridad';
 
 $lang['mensajes'] = array(
-    3=> 'Usuario inválido', 2=>'Contraseña incorrecta'
+    3=> 'Usuario no registrado', 2=>'Contraseña incorrecta'
 );

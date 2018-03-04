@@ -9,6 +9,14 @@ class Sesion_model extends CI_Model {
         parent::__construct();
     }
 
+    /**
+    * Valida si existe un usuario con el nombre y contraseñas pasados como parámetros
+    * @param string usr - nombre de usuario
+    * @param string passwd - contraseña
+    * @return int - Devuelve 1 si existe dicho usuario y su contraseña es válida,
+    * 2 si el el usuario existe pero la contraseña pasada es incorrecta 
+    * y 3 si el usuario no esta registrado.
+    */
     function validar_usuario($usr, $passwd) {
         $this->db->flush_cache();
         $this->db->reset_query();
@@ -30,14 +38,12 @@ class Sesion_model extends CI_Model {
             $cadena = $result[0]['token'] . $passwd . $result[0]['token'];
             $clave = $this->seguridad->encrypt_sha512($cadena);
             if ($clave == $result[0]['password']) {
-                return 1; //Existe
+                return 1; 
             }
-            return 2; //contraseña incorrrecta
+            return 2; 
         } else {
-            return 3; //Usuario no existe
+            return 3; 
         }
-
-        //$cadena = $result[0]['token'] . $password . $result[0]['token'];
     }
 
     public function update_password($code = null, $new_password = null)

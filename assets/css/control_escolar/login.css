@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif !important;
+}
+body {
+  background-image: url('http://images-cdn.moviepilot.com/image/upload/c_fill,h_794,w_1912/t_mp_quality/hulkbuster-armor-this-is-how-avengers-age-of-ultron-s-hulkbuster-scene-ll-go-jpeg-301706.jpg');
+  background-position: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.overlay {
+  z-index: 1;
+  opacity: 0.5;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.leftcontent {
+  z-index: 2;
+  height: 100%;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ltitle {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.lcontent {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.sidebar {
+  background-color: rgba(65, 127, 167, 0.9098039215686274);
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 60px;
+  padding-left: 5%
+}
+
+.rtitle {
+  color: #02443f;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.rlogos {
+  color: #333;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.textinput {
+  margin-left: 10%;
+  height: 40px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #02443f;
+  border-left-width: 5px;
+  background-color: #eee;
+  width: 270px;
+  padding-left: 10px;
+  outline: 0;
+}
+
+.textinput:focus {
+  background-color: #f4f4f4;
+}
+
+.submit {
+  background-color: #1e90ff;
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+}

@@ -259,6 +259,9 @@ class Usuario_model extends MY_Model
         return $unidad;
     }
 
+    /**
+    * 
+    */
     public function get_usuarios($params = [])
     {
         $this->db->flush_cache();
